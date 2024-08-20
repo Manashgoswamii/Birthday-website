@@ -1,0 +1,113 @@
+.wishes-page {
+    text-align: center;
+    padding: 20px;
+    background-image:url("https://dl.dropbox.com/s/4ubs90vu8bn5zq2/image.gif");
+    background-size: cover;
+    height: 800px;
+    display: block;
+  }
+   
+  .wishes-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .wishes {
+   
+    height: 90px;
+    margin-top: 20px;
+    padding-top: 10px;
+    width:100%;
+    font-size: 3em;
+    color: rgb(244, 18, 158);
+    letter-spacing: 0.1em;
+    font-family: 'Pacifico', cursive;
+   
+  }
+  
+  .wish-card {
+    background: -webkit-linear-gradient(#ffff00, #ff1493);; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 350px;
+    text-align: center;
+  }
+  .wish-card :hover{
+    background-color: #383737;
+    transition: background-color 0.3s ease;
+  }
+  
+  .photo1 {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background-image: url(./person1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* display: cover; */
+  }
+  
+  .photo2 {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background-image: url(./person2.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* display: cover; */
+  }
+  
+  .photo3 {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background-image: url(./person3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* display: cover; */
+  }
+  .photo4 {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    background-image: url(./person4.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* display: cover; */
+  }
+  
+  
+
+  .wish-card p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: cursive;
+  }
+  
+  .wish-card h4 {
+    color: black;
+    margin-top: 0;
+    color: #777;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .wishes-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wish-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

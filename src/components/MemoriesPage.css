@@ -1,0 +1,85 @@
+.memories-page {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    height: 800px;
+    background-image: url("https://dl.dropbox.com/s/4ubs90vu8bn5zq2/image.gif");
+    background-size: cover;       
+  }
+  
+  .memories-page h2{
+    margin-top: 8px;
+    padding-top: 16pxpx;
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: red;
+    letter-spacing: 0.1em;
+    font-family: 'Pacifico', cursive;
+     /* background: -webkit-linear-gradient(#ffff00, #ff1493);  */
+  }
+  .memories-loop {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 15s infinite linear;
+  }
+  .memory-1{
+    display:inline;
+    height:300px;
+    width: 300px;
+    background-image: url(./photo1.jpg);
+    background-size: cover;
+  }
+  .memory-2{
+    display:inline;
+    height:300px;
+    width: 300px;
+    background-image: url(./photo2.jpg);
+    background-size: cover;
+  }
+  .memory-3{
+    display:inline;
+    height:300px;
+    width: 300px;
+    background-image: url(./photo3.jpg);
+    background-size: cover;
+  }
+  
+  .img{
+    display: inline;
+    width: 200px;
+    height:300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-image: url(./person1.jpg);
+    
+  }
+  .memories-loop img {
+    width: 200px;
+    height:300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    justify-content: space-evenly;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .memories-loop img {
+      width: 150px;
+      margin: 0 5px;
+    }
+  }
+  
